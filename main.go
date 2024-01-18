@@ -5,9 +5,10 @@ import (
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/anusornc/go-gorm-db/db"     //นำเขา db
+	"github.com/anusornc/go-gorm-db/models" //นำเข้า models
 	"github.com/gin-gonic/gin"
-	"github.com/anusornc/go-gorm/models"
-	"github.com/anusornc/go-gorm/db"
 	"github.com/joho/godotenv"
 )
 
@@ -23,7 +24,7 @@ func main() {
 	dbHost := os.Getenv("DB_HOST")
 	dbPort := os.Getenv("DB_PORT")
 
-	database, err := db.ConnectDatabase(dbType, dbUser, dbPassword, dbHost, dbPort ,dbName)
+	database, err := db.ConnectDatabase(dbType, dbUser, dbPassword, dbHost, dbPort, dbName)
 	if err != nil {
 		log.Fatalf("failed to connect database: %v", err)
 	}
@@ -60,4 +61,3 @@ func main() {
 		log.Fatalf("Server is not running: %v", err)
 	}
 }
-

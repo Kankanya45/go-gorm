@@ -4,8 +4,7 @@ package models
 import "gorm.io/gorm"
 
 type Item struct {
-	gorm.Model
-	Name  string
-	Price float64
+	gorm.Model //gorm จะสร้าง ID
+	Name       string
+	Price      float64
 }
-
