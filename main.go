@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Kankanya45/go-gorm-db/db"
-	"github.com/Kankanya45/go-gorm-db/models"
+	"github.com/Kankanya45/go-gorm/db"
+	"github.com/Kankanya45/go-gorm/models"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"

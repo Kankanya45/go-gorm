@@ -1,4 +1,4 @@
-module github.com/Kankanya45/go-gorm-db
+module github.com/Kankanya45/go-gorm
 
 go 1.20
 
