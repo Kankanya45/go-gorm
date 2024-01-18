@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/anusornc/go-gorm-db/db"     //นำเขา db
-	"github.com/anusornc/go-gorm-db/models" //นำเข้า models
+	"github.com/Kankanya45/go-gorm-db/db"     //นำเขา db
+	"github.com/Kankanya45/go-gorm-db/models" //นำเข้า models
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
